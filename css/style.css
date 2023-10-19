@@ -1,0 +1,524 @@
+header{
+    background-color: black;
+    text-decoration: white;
+}
+
+.gif{
+    background-color: rgb(247, 245, 245);
+    background-image: url("../assets/img/gif-para\ mi\ magina.gif");
+    background-size: contain;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    box-shadow: 1px 1px .625rem black;
+}
+.carta1{
+    background-color: aliceblue;
+    background-image: url("../assets/img/power.jpg");
+    width: 450px;
+    height: 18.75rem;
+    background-position: center;
+    box-shadow: 1px 1px .625rem black;
+    border-radius: 1.25rem;
+    color: aliceblue;
+    text-align: center;
+    background-size: contain;
+}
+.carta2{
+    background-color: aliceblue;
+    background-image: url("../assets/img/hipertrofia.jpg");
+    width: 450px;
+    height: 18.75rem;
+    background-position: center;
+    box-shadow: 1px 1px .625rem black;
+    border-radius: 1.25rem;
+    color: aliceblue;
+    text-align: center;
+    background-size: contain;
+}
+.carta3{
+    background-color: aliceblue;
+    background-image: url("../assets/img/funcional.jpg");
+    width: 450px;
+    height: 18.75rem;
+    background-position: center;
+    box-shadow: 1px 1px .625rem black;
+    border-radius: 1.25rem;
+    color: aliceblue;
+    text-align: center;
+    background-size: contain;
+}
+.carta4{
+    background-color: rgb(252, 252, 252);
+    background-image: url("../assets/img/cardio-hiit.jpg");
+    width: 450px;
+    height: 18.75rem;
+    background-position: center;
+    box-shadow: 1px 1px .625rem black;
+    border-radius: 1.25rem;
+    color: rgb(7, 8, 8);
+    text-align: center;
+    background-size: contain;
+}
+.carta5{
+    background-color: aliceblue;
+    background-image: url("../assets/img/natacion.jpg");
+    width: 450px;
+    height: 18.75rem;
+    background-position: center;
+    box-shadow: 1px 1px .625rem black;
+    border-radius: 1.25rem;
+    color: aliceblue;
+    text-align: center;
+    background-size: contain;
+}
+.carta6{
+    background-color: aliceblue;
+    background-image: url("../assets/img/recuperacion\ de\ leciones.jpg");
+    width: 450px;
+    height: 18.75rem;
+    background-position: center;
+    box-shadow: 1px 1px .625rem black;
+    border-radius: 1.25rem;
+    color: aliceblue;
+    text-align: center;
+    background-size: contain;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+} 
+.color{
+    color:aliceblue; 
+    text-decoration: none;
+    font-size: 1.5625rem;   
+} 
+footer{
+    background-color: black;
+    width: 100%;
+    height: 12.5rem;
+}
+footer section{
+    color: aliceblue;
+}
+footer section h5{
+    text-align: center;
+}
+.icon-footer{
+    text-align:end;
+}
+.alimentacion{
+    background-color: rgb(127, 131, 134);
+    width: 100%;
+    height: 12.5rem;
+    box-shadow: 1px 1px .6 rgb(116, 115, 115);
+}
+.alimentacion h2{
+    font-size: 30px;
+
+}
+.titulo{
+    text-align: center;
+    width: 100%;
+}
+.card img{
+
+    width: 176px;
+    height: 185px;
+    margin: 40px;
+    overflow: hidden;
+    box-shadow: 1px 1px .625rem black;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+}
+.plan{
+    background-color:#FFDA56;
+    height: 6.25rem;
+    box-shadow: 1px 1px .625rem black;
+    border-radius: 1.25rem;
+    text-align: center;
+}
+.plan button a{
+    text-align:end;
+}
+.foto-perfil article{
+    background-color: #9c9b99;
+}
+.sobre{
+    background-color: #FFDA56;
+    border-radius: 1.25rem;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+.sobre h6{
+    text-align: center;
+}
+.ubicacion{
+    text-align: center;
+}
+.cartas{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3.1;
+}
+main section article div{
+    text-align: center;
+}
+.cartas div h2{
+    color:aliceblue;
+    background-color: #9c9b99a9;
+    width: 18.75rem;
+    text-align: center;
+    padding: 4px;
+    border: 1px black;
+}
+.conjunto{
+    background-color: #FFDA56;
+    width: 100%;
+    height: 12.5rem;
+    box-shadow: 1px 1px .6 rgb(14, 12, 12);
+    border-radius: 1.;
+}
+.con{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.con img{
+    width: 150px;
+    height: 150px;
+    box-shadow: 1px 1px .6 rgb(14, 12, 12);
+}
+.fotos{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    align-content: center;
+    grid-template-columns: repeat(4,250px);
+    grid-template-rows: repeat(4,170px);
+    grid-template-areas:
+    "foto1 foto1 foto2 foto3"
+    "foto1 foto1 foto4 foto3"
+    "foto5 foto8 foto6 foto6"
+    "foto7 foto8 foto6 foto6"
+}
+.fotos{
+    gap: .9375rem;
+    justify-content: center;
+    align-content: center;
+}
+.foto1{
+    background-color: #FFDA56;
+    grid-area: foto1;
+}
+.foto2{
+    background-color: aqua;
+    grid-area: foto2;
+}
+.foto3{
+    background-color: blue;
+    grid-area: foto3;
+}
+.foto4{
+    background-color: black;
+    grid-area: foto4;
+}
+.foto5{
+    background-color: #9c9b99;
+    grid-area: foto5;
+}
+.foto6{
+    background-color: beige;
+    grid-area: foto6;
+}
+.foto7{
+    background-color: #d42f12;
+    grid-area: foto7;
+}
+.foto8{
+    background-color: #099126;
+    grid-area: foto8;
+}
+section div img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    box-shadow: 1px 1px .625rem rgb(14, 12, 12);
+}
+@media(max-width:1024px){
+    .cartas{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 4.375rem;
+    }
+    .fotos{
+        grid-template-columns: repeat(4,200px);
+        grid-template-rows: repeat(4,120px);
+    }
+}
+@media(max-width:768px){
+    nav ul li{
+        text-align: center;
+    }
+    .gif{
+        text-align: center;
+    }
+    .alimentacion h2{
+        text-align: center;
+    }
+    .conjunto h2{
+        text-align: center;
+    }
+    .sobre{
+        height: 100%;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .gif{
+        height: 18.75rem;
+    }
+    
+    
+    .card img{
+        width: 100px;
+        height: 100px;
+        margin: 40px;
+        overflow: hidden;
+        box-shadow: 1px 1px .625rem black;
+    }
+    .card h2{
+        font-size: 15px;
+    }
+    .cards{
+        display: flex;
+        justify-content: space-around;
+    }
+    .fotos{
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        align-content: center;
+        grid-template-columns: repeat(3,200px);
+        grid-template-rows: repeat(6,4.375rem);
+        grid-template-areas:
+        "foto1 foto1 foto2"
+        "foto1 foto1 foto4"
+        "foto5 foto8 foto8"
+        "foto7 foto8 foto8"
+        "foto3 foto3 foto6"
+        "foto3 foto3 foto6"
+        }
+        .fotos{
+            gap: .9375rem;
+            justify-content: center;
+            align-content: center;
+        }
+        .foto1{
+            background-color: #FFDA56;
+            grid-area: foto1;
+        }
+        .foto2{
+            background-color: aqua;
+            grid-area: foto2;
+        }
+        .foto3{
+            background-color: blue;
+            grid-area: foto3;
+        }
+        .foto4{
+            background-color: black;
+            grid-area: foto4;
+        }
+        .foto5{
+            background-color: #9c9b99;
+            grid-area: foto5;
+        }
+        .foto6{
+            background-color: beige;
+            grid-area: foto6;
+        }
+        .foto7{
+            background-color: #d42f12;
+            grid-area: foto7;
+        }
+        .foto8{
+            background-color: #099126;
+            grid-area: foto8;
+        }
+        .sobre{
+            width: 100%;
+            height: 43.75rem;
+        }
+        .ubicacion iframe{
+            height: 250px;
+            width: 15.625rem;
+        }
+    }
+        @media(max-width:425px){
+            .card img{
+                width: 90px;
+                height: 90px;
+                margin: 40px;
+                overflow: hidden;
+                box-shadow: 1px 1px .625rem black;
+            }
+            .cards{
+                display: flex;
+                justify-content: space-around;
+            }
+            .icono img{
+                background-position: center;
+            }
+            .color{
+                font-size: .6875rem;
+            }
+        .gif{
+            width: 100%;
+            height: 12.5rem;
+        }
+        .fotos{
+            display: grid;
+            width: 100%;
+            height: 100vh;
+            align-content: center;
+            grid-template-columns: repeat(2,170px);
+            grid-template-rows: repeat(6,80px);
+            grid-template-areas:
+            "foto1 foto2"
+            "foto1 foto3"
+            "foto4 foto6"
+            "foto5 foto6"
+            "foto7 foto8"
+            "foto7 foto8"
+            }
+            .fotos{
+                gap: .9375rem;
+                justify-content: center;
+                align-content: center;
+            }
+            .foto1{
+                background-color: #FFDA56;
+                grid-area: foto1;
+            }
+            .foto2{
+                background-color: aqua;
+                grid-area: foto2;
+            }
+            .foto3{
+                background-color: blue;
+                grid-area: foto3;
+            }
+            .foto4{
+                background-color: black;
+                grid-area: foto4;
+            }
+            .foto5{
+                background-color: #9c9b99;
+                grid-area: foto5;
+            }
+            .foto6{
+                background-color: beige;
+                grid-area: foto6;
+            }
+            .foto7{
+                background-color: #d42f12;
+                grid-area: foto7;
+            }
+            .foto8{
+                background-color: #099126;
+                grid-area: foto8;
+            }
+            .sobre{
+                width: 100%;
+                height: 43.75rem;
+            }
+            .ubicacion iframe{
+                height: 250px;
+                width: 15.625rem;
+            }
+            .sobre{
+                height: 78.125rem;
+            }
+            .car{
+                display: none;
+            }
+            header{
+                text-align: center;
+            }
+            header a img{
+                height: 150px;
+                width: 170px;
+            }
+            header nav ul li{
+                display: flex;
+                justify-content: left;
+                margin: 15px;
+            }
+            .color{
+                font-size: 35px;
+            }
+            .carta1{
+                height: 220px;
+                width: 335px;
+            }
+            .carta2{
+                height: 220px;
+                width: 335px;
+            }
+            .carta3{
+                height: 220px;
+                width: 335px;
+            }
+            .carta4{
+                height: 220px;
+                width: 335px;
+            }
+            .carta5{
+                height: 220px;
+                width: 335px;
+            }
+            .carta6{
+                height: 220px;
+                width: 335px;
+            }
+        }
+    @media(max-width:375px){
+        header nav ul li{
+            display: flex;
+            justify-content: left;
+            margin: 15px;
+        }
+        .color{
+            font-size: 35px;
+        }
+        header a img{
+            height: 100px;
+            width: 7.5rem;
+        }
+        main section article div{
+            text-align: center;
+        }
+        .fotos{
+            grid-template-columns: repeat(2,135px);
+            grid-template-rows: repeat(6,5rem);
+        }
+        .sobre{
+            height: 1400px;
+        }
+    }
+    @media(max-width:320px){
+        .sobre{
+            height: 1700px;
+        }
+    }
+
+
+
