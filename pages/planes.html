@@ -5,59 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  />
 </head>
 <body>
-    <header>
-        <a href="../index.html">
+    <header class="nav-wrapper">
+        <nav class="navbar">
+        <a class="icono" href="#">
             <img src="../assets/img/gimnasio.png" alt="">
         </a>
-        <nav>
-            <ul>
-                <li><a class="color" href="../index.html">inicio</a></li>
-                <li><a class="color" href="./tienda.html">tienda</a></li>
-                <li><a class="color" href="#">planes</a></li>
-                <li><a class="color" href="./transformaciones.html">tranformaciones</a></li>
-                <li><a class="color" href="./info.html">info</a></li>
-            </ul>
+        <input type="checkbox" name="" id="toggle"> 
+        <label for="toggle"><i class="material-icons">menu</i></label>
+            <div class="menu">
+                <ul class="ul">
+                    <li><a class="sitios" href="../index.html">inicio</a></li>
+                    <li><a class="sitios" href="../pages/tienda.html">tienda</a></li>
+                    <li><a class="sitios" href="#">planes</a></li>
+                    <li><a class="sitios" href="../pages/transformaciones.html">tranformaciones</a></li>
+                    <li><a class="sitios" href="../pages/info.html">info</a></li>
+                </ul>
+            </div>
+            
         </nav>
     </header>
+
     <main>
-        <section>
-            <article class="plan">
-                <p>PRESTACION DEL ESTABLECIMIENTO/GIMNASIO</p>
-                <button><a href="">pagar</a></button>
+        <section class="planes">
+            <article>
+                <div>
+                    <button class="plan"><a href="">PRESTACION DEL ESTABLECIMIENTO/GIMNASIO</a></button>
+                </div>
             </article>
-            <article class="plan">
-                <p>PRESTACION DE LA PICINA</p>
-                <button><a href="">pagar</a></button>
+
+            <article>
+                <div>
+                    <button class="plan"><a href="">PRESTACION DE LA PICINA</a></button>
+                </div>
             </article>
-            <article class="plan">
-                <p>PRESTACION DEL ESTABLECIMIENTO+PERSONAL TRAINER</p>
-                <button><a href="">pagar</a></button>
-            </article>
-            <article class="plan">
-                <p>PRESTACION DE LA PICINA+PERSONAL ESPECIALIZADO</p>
-                <button><a href="">pagar</a></button>
-            </article>
-            <article class="plan">
-                <p>NUTRICION</p>
-                <button><a href="">pagar</a></button>
-            </article>
+                
+                
+                <div>
+                    <button class="plan"><a href="">PRESTACION DEL ESTABLECIMIENTO + PERSONAL TRAINER</a></button>
+                </div>
+                
+                <div>
+                    <button class="plan"><a href="">PRESTACION DE LA PICINA + PERSONAL ESPECIALIZADO</a></button>
+                </div>
+                
+                <div>
+                    <button class="plan"><a href="">NUTRICION</a></button>
+                </div>
+
+                <div>
+                    <button class="plan"><a href="">PROFECIONAL CAPACITADOPARA EL TRATADO DE RECUPERACIONES DE LECIONES</a></button>
+                </div>
+                
+                
         </section>
 
-        <div class="alimentacion">
+        <div class="requerimientos">
             <h2>requerimientos</h2>
             <p>#traer el equipo necesario para entrenar, ej: botella de agua, tuallas, etc</p>
             <p>#si entrenas sin un personal trainer, responsabilidad al utilizar las maquinas</p>
             <p>#respeto con las personas/personal trainer</p>
+            <p>#procurar dejar las mancuernas, barras, discos, etc en su debido lugar</p>
         </div>
 
 
     </main>
     <footer class="footer">
         <section>
-            <h5>contactos</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores rerum quasi quidem blanditiis repudiandae neque recusandae dolorum nostrum possimus ducimus? Quos at eveniet debitis dignissimos corporis porro quis inventore obcaecati.</p>
+            <h2>contactos</h2>
+            <article class="info-footer">
+                <p>horarios: pripera jornada 08:00 a 13:00  segunda jornada 16:00 a 23:00</p>
+                <p>gmail: alexvilmarmansilla@hotmail arielgustavo@gmail.com</p>
+                <p>aceptamos consultas..</p>
+                <p>por mas informacion por si te quedan dudas contactanos por cualquier red social,correo y whatssap</p>
+            </article>
+
             <article class="icon-footer">
                 <a href="https://es-la.facebook.com/">
                     <img src="../assets/img/icon-footer/facebook.png" alt="">
@@ -68,6 +95,7 @@
                 <a href="https://wa.link/twc9d0">
                     <img src="../assets/img/icon-footer/whatsapp.png" alt="">
                 </a>
+                
             </article>
         </section>
     </footer>
