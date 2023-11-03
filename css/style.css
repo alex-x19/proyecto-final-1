@@ -297,7 +297,7 @@ footer {
       border-bottom: 3px solid black; }
 
 /* width 1024 */
-@media (max-width: 1042px) {
+@media (max-width: 1024px) {
   .main-trans .fotos {
     grid-template-columns: repeat(4, 200px);
     grid-template-rows: repeat(4, 120px); } }
@@ -360,6 +360,7 @@ footer {
       grid-area: foto8; } }
 
 @media (max-width: 425px) {
+  /* index nav */
   .nav-wrapper nav #toggle:checked ~ div {
     height: 100%; }
   .nav-wrapper nav label {
@@ -372,9 +373,56 @@ footer {
     .nav-wrapper nav div ul {
       flex-direction: column;
       align-items: center;
-      padding: 0.5rem 0px; } }
+      padding: 0.5rem 0px; }
+  /* index */
+  .main-index .gif {
+    height: 280px; }
+    .main-index .gif h3 {
+      font-size: 35px; }
+  .main-index .cartas div {
+    height: 220px;
+    width: 335px; }
+  /* footer */
+  .footer {
+    height: 430px;
+    gap: 0; }
+    .footer section .info-footer {
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+      gap: 0px; }
+  /* tienda  */
+  .main-tienda .cards .card:nth-child(1) {
+    display: none; }
+  .main-tienda .cards .card:nth-child(4) {
+    display: none; }
+  .main-tienda .cards .card:nth-child(6) {
+    display: none; }
+  .main-tienda .cards .card:nth-child(9) {
+    display: none; }
+  .main-tienda .cards .card:nth-child(12) {
+    display: none; }
+  .main-tienda .cards .card:nth-child(15) {
+    display: none; }
+  /* tranformaciones */
+  .main-trans .fotos {
+    grid-template-columns: repeat(2, 170px);
+    grid-template-rows: repeat(6, 80px);
+    grid-template-areas: "foto1 foto2" "foto1 foto3" "foto4 foto6" "foto5 foto6" "foto7 foto8" "foto7 foto8"; }
+  /* info */
+  .main-info .ubicacion iframe {
+    height: 250px;
+    width: 250px; }
+  .main-info .foto-perfil article {
+    width: 100%; }
+  .main-planes section article h2 {
+    font-size: 25px; } }
 
-.main-index .gif {
-  height: 300px; }
-  .main-index .gif h3 {
-    font-size: 35px; }
+@media (max-width: 375px) {
+  .main-index .gif {
+    height: 250px; }
+    .main-index .gif h3 {
+      font-size: 25px; }
+  .main-index .cartas div {
+    height: 210px;
+    width: 315px; } }
