@@ -78,9 +78,6 @@ body {
     align-items: center; }
     .main-index .alimentacion div {
       background-image: linear-gradient(to left bottom, #e2e7e7, #d9dddd, #d0d4d4, #c8caca, #bfc1c1, #b8baba, #b2b3b3, #abacac, #a4a5a5, #9d9f9f, #979898, #909292);
-      width: 1000px;
-      border-radius: 70px;
-      padding-left: 5px;
       box-shadow: 1px 1px .625rem black; }
       .main-index .alimentacion div h2 {
         font-size: 30px;
