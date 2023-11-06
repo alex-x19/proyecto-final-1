@@ -1,8 +1,11 @@
-/* index */
-/* navegacion */
+body {
+  background-image: linear-gradient(to bottom, #000000, #080708, #0e0e0f, #131414, #171818, #1b1c1c, #202121, #242525, #2a2b2b, #303131, #373737, #3d3d3d); }
+
 .nav-wrapper {
   width: 100%;
   margin: 0 auto; }
+  .nav-wrapper nav #toggle, .nav-wrapper nav label {
+    display: none; }
   .nav-wrapper nav {
     display: flex;
     flex-wrap: wrap;
@@ -16,16 +19,47 @@
       list-style: none;
       display: flex;
       gap: 2rem; }
+      .nav-wrapper nav ul li:hover {
+        transform: scale(1.2); }
       .nav-wrapper nav ul li a {
         text-decoration: none;
         color: white;
         font-size: 25px; }
-
-.nav-wrapper nav #toggle, .nav-wrapper nav label {
-  display: none; }
+        .nav-wrapper nav ul li a:hover {
+          color: #FFDA56; }
 
 .main-index {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  -webkit-animation: scale-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes scale-in-bottom {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 1; } }
+
+@keyframes scale-in-bottom {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 1; } }
   .main-index .gif {
     background-color: #f7f5f5;
     background-image: url("../assets/img/gif-para mi magina.gif");
@@ -39,103 +73,73 @@
       font-size: 40px;
       text-align: center; }
   .main-index .alimentacion {
+    margin-top: 30px;
     display: flex;
     align-items: center; }
     .main-index .alimentacion div {
-      background-color: #7f8386;
-      width: 800px;
-      box-shadow: 1px 1px 0.6 #747373;
+      background-image: linear-gradient(to left bottom, #e2e7e7, #d9dddd, #d0d4d4, #c8caca, #bfc1c1, #b8baba, #b2b3b3, #abacac, #a4a5a5, #9d9f9f, #979898, #909292);
+      width: 1000px;
       border-radius: 70px;
       padding-left: 5px;
       box-shadow: 1px 1px .625rem black; }
       .main-index .alimentacion div h2 {
         font-size: 30px;
-        text-align: center; }
+        text-align: center;
+        border-bottom: 5px solid black; }
       .main-index .alimentacion div p {
-        text-align: center; }
+        text-align: center;
+        font-size: 30px; }
   .main-index section {
+    margin-top: 30px;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 30px; }
-    .main-index section .carta1 {
+    .main-index section .carta1, .main-index section .carta2, .main-index section .carta3, .main-index section .carta4, .main-index section .carta5, .main-index section .carta6 {
       background-color: aliceblue;
       background-image: url("../assets/img/power.jpg");
       width: 450px;
       height: 18.75rem;
       background-position: center;
-      box-shadow: 1px 1px .625rem black;
+      box-shadow: 1px 1px 0.625rem #2c2c2c;
       border-radius: 1.25rem;
       color: aliceblue;
       text-align: center;
-      background-size: contain; }
+      background-size: contain;
+      transition: 1s; }
+      .main-index section .carta1 h2, .main-index section .carta2 h2, .main-index section .carta3 h2, .main-index section .carta4 h2, .main-index section .carta5 h2, .main-index section .carta6 h2 {
+        background-color: #202121ad;
+        font-size: 30px; }
+      .main-index section .carta1 p, .main-index section .carta2 p, .main-index section .carta3 p, .main-index section .carta4 p, .main-index section .carta5 p, .main-index section .carta6 p {
+        font-size: 30px;
+        display: none; }
+      .main-index section .carta1:hover, .main-index section .carta2:hover, .main-index section .carta3:hover, .main-index section .carta4:hover, .main-index section .carta5:hover, .main-index section .carta6:hover {
+        transform: scale(1.1); }
+        .main-index section .carta1:hover p, .main-index section .carta2:hover p, .main-index section .carta3:hover p, .main-index section .carta4:hover p, .main-index section .carta5:hover p, .main-index section .carta6:hover p {
+          display: flex;
+          background-color: #242525b4; }
     .main-index section .carta2 {
-      background-color: aliceblue;
-      background-image: url("../assets/img/hipertrofia.jpg");
-      width: 450px;
-      height: 18.75rem;
-      background-position: center;
-      box-shadow: 1px 1px .625rem black;
-      border-radius: 1.25rem;
-      color: aliceblue;
-      text-align: center;
-      background-size: contain; }
+      background-image: url("../assets/img/hipertrofia.jpg"); }
     .main-index section .carta3 {
-      background-color: aliceblue;
-      background-image: url("../assets/img/funcional.jpg");
-      width: 450px;
-      height: 18.75rem;
-      background-position: center;
-      box-shadow: 1px 1px .625rem black;
-      border-radius: 1.25rem;
-      color: aliceblue;
-      text-align: center;
-      background-size: contain; }
+      background-image: url("../assets/img/funcional.jpg"); }
     .main-index section .carta4 {
-      background-color: #fcfcfc;
-      background-image: url("../assets/img/cardio-hiit.jpg");
-      width: 450px;
-      height: 18.75rem;
-      background-position: center;
-      box-shadow: 1px 1px .625rem black;
-      border-radius: 1.25rem;
-      color: #070808;
-      text-align: center;
-      background-size: contain; }
+      background-image: url("../assets/img/cardio-hiit.jpg"); }
     .main-index section .carta5 {
-      background-color: aliceblue;
-      background-image: url("../assets/img/natacion.jpg");
-      width: 450px;
-      height: 18.75rem;
-      background-position: center;
-      box-shadow: 1px 1px .625rem black;
-      border-radius: 1.25rem;
-      color: aliceblue;
-      text-align: center;
-      background-size: contain; }
+      background-image: url("../assets/img/natacion.jpg"); }
     .main-index section .carta6 {
-      background-color: aliceblue;
-      background-image: url("../assets/img/recuperacion de leciones.jpg");
-      width: 450px;
-      height: 18.75rem;
-      background-position: center;
-      box-shadow: 1px 1px .625rem black;
-      border-radius: 1.25rem;
-      color: aliceblue;
-      text-align: center;
-      background-size: contain; }
+      background-image: url("../assets/img/recuperacion de leciones.jpg"); }
 
-/* footer */
 footer {
   background-color: black;
   width: 100%;
-  height: 200px;
-  padding-left: 5px; }
+  height: 200px; }
   footer section {
-    color: aliceblue; }
+    color: aliceblue;
+    margin-left: 10px; }
     footer section h2 {
-      text-align: center; }
+      text-align: center;
+      font-size: 30px; }
     footer section .icon-footer {
       text-align: center; }
     footer section .info-footer {
@@ -143,80 +147,140 @@ footer {
       justify-content: space-around;
       gap: 150px; }
 
-/* tienda */
-.main-tienda .titulo {
-  text-align: center;
-  width: 100%; }
+.main-tienda {
+  -webkit-animation: scale-in-ver-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-ver-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
-.main-tienda .conjunto {
-  background-color: #FFDA56;
-  width: 100%;
-  height: 12.5rem;
-  box-shadow: 1px 1px 0.6 #0e0c0c;
-  border-radius: 16px; }
-  .main-tienda .conjunto .con {
+@-webkit-keyframes scale-in-ver-center {
+  0% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    opacity: 1; } }
+
+@keyframes scale-in-ver-center {
+  0% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    opacity: 1; } }
+  .main-tienda .titulo {
+    color: white;
+    text-align: center;
+    width: 100%; }
+  .main-tienda .conjunto {
+    background-color: #FFDA56;
+    width: 100%;
+    height: 12.5rem;
+    box-shadow: 1px 1px 0.6 #0e0c0c;
+    border-radius: 16px; }
+    .main-tienda .conjunto .con {
+      display: flex;
+      justify-content: center;
+      justify-content: space-around; }
+      .main-tienda .conjunto .con img {
+        width: 150px;
+        height: 150px;
+        box-shadow: 1px 1px 0.6 #0e0c0c; }
+  .main-tienda .cards {
     display: flex;
-    justify-content: center;
     justify-content: space-around; }
-    .main-tienda .conjunto .con img {
-      width: 150px;
-      height: 150px;
-      box-shadow: 1px 1px 0.6 #0e0c0c; }
+    .main-tienda .cards .card {
+      background-color: white;
+      height: 320px;
+      width: 230px;
+      box-shadow: 2px 2px 5px #535353;
+      border-radius: 15px;
+      padding-left: 3px;
+      text-align: center;
+      transition: 1s; }
+      .main-tienda .cards .card:hover {
+        transform: scale(1.2); }
+      .main-tienda .cards .card div {
+        height: 50%;
+        width: 100%; }
+        .main-tienda .cards .card div img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          border-radius: 15px; }
+      .main-tienda .cards .card .btn {
+        cursor: pointer;
+        background-color: #FFDA56;
+        padding: 1px 80px 1px 80px;
+        border-radius: 10px;
+        text-align: center; }
+        .main-tienda .cards .card .btn:hover {
+          background-color: #c49b06; }
 
-.main-tienda .cards {
-  display: flex;
-  justify-content: space-around; }
-  .main-tienda .cards .card {
-    height: 320px;
-    width: 230px;
-    box-shadow: 2px 2px 5px black;
-    border-radius: 15px;
-    padding-left: 3px;
-    text-align: center; }
-    .main-tienda .cards .card div {
-      height: 50%;
-      width: 100%; }
-      .main-tienda .cards .card div img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        border-radius: 15px; }
-    .main-tienda .cards .card .btn {
-      cursor: pointer;
-      background-color: #FFDA56;
-      padding: 1px 80px 1px 80px;
-      border-radius: 10px;
-      text-align: center; }
-      .main-tienda .cards .card .btn:hover {
-        background-color: #c49b06; }
-
-/* planes */
 .main-planes div {
-  background-color: #9c9b99;
+  background-image: linear-gradient(to left bottom, #e2e7e7, #d9dddd, #d0d4d4, #c8caca, #bfc1c1, #b8baba, #b2b3b3, #abacac, #a4a5a5, #9d9f9f, #979898, #909292);
   text-align: center; }
   .main-planes div h2 {
-    border-bottom: 5px solid black; }
+    border-bottom: 5px solid black;
+    font-size: 30px; }
+  .main-planes div p {
+    font-size: 30px; }
 
 .main-planes section {
   display: flex;
   gap: 20px;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  -webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-hor-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes scale-in-hor-right {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1; }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1; } }
+
+@keyframes scale-in-hor-right {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1; }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    opacity: 1; } }
   .main-planes section article {
     border: 5px solid black;
     width: 1000px;
     background-color: #FFDA56;
     text-align: center;
     box-shadow: 2px 2px 5px black;
-    border-radius: 50px; }
+    border-radius: 50px;
+    transition: 1s; }
     .main-planes section article:hover {
-      background-color: #c49b06; }
+      background-color: #c59c08;
+      transform: scale(1.1); }
     .main-planes section article a:hover {
       color: white; }
     .main-planes section article h2 {
       border-bottom: 5px solid black;
       text-align: center;
-      border-radius: 25px 25px 0px 0px; }
+      border-radius: 25px 25px 0px 0px;
+      font-size: 30px; }
     .main-planes section article p {
       font-size: 20px; }
     .main-planes section article a {
@@ -225,8 +289,8 @@ footer {
       font-size: 25px;
       color: black; }
 
-/* tranformaciones */
 .main-trans .galeri {
+  color: white;
   text-align: center; }
 
 .main-trans .fotos {
@@ -236,15 +300,40 @@ footer {
   align-content: center;
   grid-template-columns: repeat(4, 250px);
   grid-template-rows: repeat(4, 170px);
-  grid-template-areas: "foto1 foto1 foto2 foto3" "foto1 foto1 foto4 foto3" "foto5 foto8 foto6 foto6" "foto7 foto8 foto6 foto6"; }
+  grid-template-areas: "foto1 foto1 foto2 foto3" "foto1 foto1 foto4 foto3" "foto5 foto8 foto6 foto6" "foto7 foto8 foto6 foto6";
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
   .main-trans .fotos div img {
     width: 100%;
     height: 100%;
     object-fit: contain;
     box-shadow: 1px 1px 0.625rem #0e0c0c; }
-  .main-trans .fotos .foto1 {
+  .main-trans .fotos .foto1, .main-trans .fotos .foto2, .main-trans .fotos .foto3, .main-trans .fotos .foto4, .main-trans .fotos .foto5, .main-trans .fotos .foto6, .main-trans .fotos .foto7, .main-trans .fotos .foto8 {
     background-color: #FFDA56;
-    grid-area: foto1; }
+    grid-area: foto1;
+    transition: 1s; }
+    .main-trans .fotos .foto1:hover, .main-trans .fotos .foto2:hover, .main-trans .fotos .foto3:hover, .main-trans .fotos .foto4:hover, .main-trans .fotos .foto5:hover, .main-trans .fotos .foto6:hover, .main-trans .fotos .foto7:hover, .main-trans .fotos .foto8:hover {
+      transform: scale(1.1); }
   .main-trans .fotos .foto2 {
     background-color: aqua;
     grid-area: foto2; }
@@ -272,37 +361,72 @@ footer {
   justify-content: center;
   align-content: center; }
 
-/* info */
-.main-info .sobre {
-  background-color: #FFDA56;
-  border-radius: 0px 0px 20px 20px;
-  padding: 10px;
-  text-align: center; }
+.main-info {
+  -webkit-animation: scale-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: scale-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
-.main-info .ubicacion {
-  text-align: center; }
+@-webkit-keyframes scale-in-bottom {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 1; } }
 
-.main-info .foto-perfil {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center; }
-  .main-info .foto-perfil article {
-    background-color: #9c9b99;
-    width: 950px;
-    border-radius: 70px;
+@keyframes scale-in-bottom {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 1; } }
+  .main-info .sobre {
+    background-image: linear-gradient(to top, #f4ff00, #fde600, #ffcd00, #ffb400, #ff9b00);
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px;
+    text-align: center; }
+  .main-info .ubicacion {
     text-align: center;
-    box-shadow: 5px 5px 8px black; }
-    .main-info .foto-perfil article h2 {
-      border-bottom: 3px solid black; }
+    font-size: 30px;
+    color: white; }
+  .main-info .foto-perfil {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center; }
+    .main-info .foto-perfil article {
+      background-image: linear-gradient(to left bottom, #e2e7e7, #d9dddd, #d0d4d4, #c8caca, #bfc1c1, #b8baba, #b2b3b3, #abacac, #a4a5a5, #9d9f9f, #979898, #909292);
+      width: 950px;
+      border-radius: 70px;
+      text-align: center;
+      box-shadow: 5px 5px 8px black; }
+      .main-info .foto-perfil article h2 {
+        border-bottom: 3px solid black;
+        font-size: 30px; }
+      .main-info .foto-perfil article p {
+        font-size: 20px; }
 
-/* width 1024 */
 @media (max-width: 1024px) {
   .main-trans .fotos {
     grid-template-columns: repeat(4, 200px);
     grid-template-rows: repeat(4, 120px); } }
 
-/* width 768 */
+footer {
+  height: 230px; }
+
 @media (max-width: 768px) {
   .main-tienda .cards .card {
     height: 240px;
@@ -322,7 +446,7 @@ footer {
     .main-index .alimentacion div h2 {
       text-align: center; }
   .footer {
-    height: 210px;
+    height: 240px;
     width: 100%; }
     .footer section .info-footer {
       gap: 70px; }
@@ -334,7 +458,7 @@ footer {
     grid-template-columns: repeat(3, 200px);
     grid-template-rows: repeat(6, 4.375rem);
     grid-template-areas: "foto1 foto1 foto2" "foto1 foto1 foto4" "foto5 foto8 foto8" "foto7 foto8 foto8" "foto3 foto3 foto6" "foto3 foto3 foto6"; }
-    .main-trans .fotos .foto1 {
+    .main-trans .fotos .foto1, .main-trans .fotos .foto2, .main-trans .fotos .foto3, .main-trans .fotos .foto4, .main-trans .fotos .foto5, .main-trans .fotos .foto6, .main-trans .fotos .foto7, .main-trans .fotos .foto8 {
       background-color: #FFDA56;
       grid-area: foto1; }
     .main-trans .fotos .foto2 {
@@ -382,9 +506,11 @@ footer {
   .main-index .cartas div {
     height: 220px;
     width: 335px; }
+    .main-index .cartas div p {
+      font-size: 20px; }
   /* footer */
   .footer {
-    height: 430px;
+    height: 450px;
     gap: 0; }
     .footer section .info-footer {
       display: flex;

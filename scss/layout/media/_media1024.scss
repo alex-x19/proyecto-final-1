@@ -1,0 +1,11 @@
+@media(max-width:1024px){
+    .main-trans{
+        .fotos{
+            grid-template-columns: repeat(4,200px);
+            grid-template-rows: repeat(4,120px);
+        }
+    }
+}
+footer{
+    height: 230px;
+}

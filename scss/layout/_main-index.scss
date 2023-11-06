@@ -1,0 +1,129 @@
+.main-index{
+    margin-bottom: 30px;
+    -webkit-animation: scale-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    @-webkit-keyframes scale-in-bottom {
+        0% {
+            -webkit-transform: scale(0);
+            transform: scale(0);
+            -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+            opacity: 1;
+        }
+    }
+    @keyframes scale-in-bottom {
+        0% {
+            -webkit-transform: scale(0);
+            transform: scale(0);
+            -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+            opacity: 1;
+        }
+    }
+    .gif{
+        background-color: rgb(247, 245, 245);
+        background-image: url("../assets/img/gif-para\ mi\ magina.gif");
+        background-size: contain;
+        width: 100%;
+        height: 500px;
+        background-position: center;
+        box-shadow: 1px 1px .625rem black;
+        border-radius:60px;
+        h3{
+            font-size: 40px;
+            text-align: center;
+        }
+    }
+    .alimentacion{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        div{
+            background-image: $backg-degrades;
+            width: 1000px;
+            border-radius:70px;
+            padding-left: 5px;
+            box-shadow: 1px 1px .625rem black;
+            h2{
+            font-size: 30px;
+            text-align: center;
+            border-bottom:5px solid black;
+        }
+        p{
+            text-align: center;
+            font-size: 30px;
+        }    
+        }
+
+    }
+    section{
+        margin-top: 30px;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 30px;
+        .carta1{
+            background-color: aliceblue;
+            background-image: url("../assets/img/power.jpg");
+            width: 450px;
+            height: 18.75rem;
+            background-position: center;
+            box-shadow: 1px 1px .625rem rgb(44, 44, 44);
+            border-radius: 1.25rem;
+            color: aliceblue;
+            text-align: center;
+            background-size: contain;
+            transition: 1s;
+            h2{
+                background-color: #202121ad;
+                font-size: map-get($size, tit );
+            }
+            p{
+                font-size: 30px;
+                display: none;
+            }
+            &:hover{
+                transform: scale(1.1);
+                p{
+                    display: flex;
+                    background-color: #242525b4;
+                }
+            }
+        }
+        .carta2{
+            @extend .carta1;
+            background-image: url("../assets/img/hipertrofia.jpg");
+        }
+        .carta3{
+            @extend .carta1;
+            background-image: url("../assets/img/funcional.jpg");
+        }
+        .carta4{
+            @extend .carta1;
+            background-image: url("../assets/img/cardio-hiit.jpg");
+        }
+        .carta5{
+            @extend .carta1;
+            background-image: url("../assets/img/natacion.jpg");
+        }
+        .carta6{
+            @extend .carta1;
+            background-image: url("../assets/img/recuperacion\ de\ leciones.jpg");
+        }
+    }
+}

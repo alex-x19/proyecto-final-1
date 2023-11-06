@@ -1,0 +1,21 @@
+footer{
+    background-color: $backg-color;
+    width: 100%;
+    height: 200px;
+    section{
+        color: aliceblue;
+        margin-left: 10px;
+        h2{
+            text-align: center;
+            font-size: map-get($size, tit);
+        }
+        .icon-footer{
+        text-align:center
+        }
+        .info-footer{
+            display: flex;
+            justify-content: space-around;
+            gap: 150px;
+        }
+    }
+}

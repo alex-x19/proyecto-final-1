@@ -1,0 +1,87 @@
+.main-tienda{
+    -webkit-animation: scale-in-ver-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-ver-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    @-webkit-keyframes scale-in-ver-center {
+        0% {
+            -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+            opacity: 1;
+        }
+    }
+    @keyframes scale-in-ver-center {
+        0% {
+            -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+            opacity: 1;
+        }
+    }
+    .titulo{
+        color: white;
+        text-align: center;
+        width: 100%;
+    }
+    .conjunto{
+        background-color: #FFDA56;
+        width: 100%;
+        height: 12.5rem;
+        box-shadow: 1px 1px .6 rgb(14, 12, 12);
+        border-radius: 16px;
+        .con{
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            img{
+                width: 150px;
+                height: 150px;
+                box-shadow: 1px 1px .6 rgb(14, 12, 12);
+            }
+        }
+    }
+    .cards{
+        display: flex;
+        justify-content: space-around;
+        .card{
+            background-color: white;
+            height: 320px;
+            width: 230px;
+            box-shadow: 2px 2px 5px rgb(83, 83, 83);
+            border-radius: 15px;
+            padding-left: 3px;
+            text-align: center;
+            transition: 1s;
+            &:hover{
+                transform: scale(1.2); 
+            }
+            div{
+                height: 50%;
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    border-radius:15px ;
+                }
+            }
+            .btn{
+                cursor: pointer;
+                background-color: #FFDA56;
+                padding: 1px 80px 1px 80px;
+                border-radius: 10px;
+                text-align: center;
+                &:hover{
+                    background-color: #c49b06;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+.main-planes{
+    div{
+        background-image: $backg-degrades;
+        text-align: center;
+        h2{
+            border-bottom: 5px solid black;
+            font-size: map-get($size, tit);
+        }
+        p{
+            font-size: 30px;
+        }
+    }
+    section{
+        @include flex;
+        -webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	    animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        @-webkit-keyframes scale-in-hor-right {
+            0% {
+                -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+                -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+                opacity: 1;
+            }
+            100% {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+                -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+                opacity: 1;
+            }
+        }
+        @keyframes scale-in-hor-right {
+            0% {
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+            opacity: 1;
+            }
+            100% {
+                -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+                -webkit-transform-origin: 100% 100%;
+                transform-origin: 100% 100%;
+                opacity: 1;
+            }
+        }
+        article{
+            border: 5px solid black;
+            width: 1000px;
+            background-color: #FFDA56;
+            text-align: center;
+            box-shadow: 2px 2px 5px black;
+            border-radius: 50px;
+            transition: 1s;
+            &:hover{
+                background-color: #c59c08;
+                transform: scale(1.1);
+            }
+            a:hover{
+                color: white;
+            }
+            h2{
+                border-bottom: 5px solid black;
+                text-align: center;
+                border-radius: 25px 25px 0px 0px;
+                font-size: map-get($size, tit);
+            }
+            p{
+                font-size: 20px;
+            }
+            a{
+                text-decoration: none;
+                list-style: none;
+                font-size: 25px;
+                color: black;
+            }
+            
+        }
+    }
+}

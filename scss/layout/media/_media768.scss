@@ -1,0 +1,101 @@
+@media(max-width:768px){
+    .main-tienda{
+        .cards{
+            .card{
+                height: 240px;
+                width: 150px;
+                font-size: 10px;
+                h2{
+                    font-size: 15px;
+                }
+                .btn{
+                    padding: 1px 45px 1px 45px;
+                }
+            }
+        }
+    }
+    .main-planes{
+        section{
+            article{
+                width: 100%;
+                font-size: 25px;
+            }
+        }
+    }
+    .main-info{
+        .foto-perfil{
+            article{
+                width: 600px;
+            } 
+        }
+    }
+    .main-index{
+        .alimentacion{
+            width: 100%;
+            div{
+                h2{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .footer{
+        height: 240px;
+        width: 100%;
+        section{
+                .info-footer{
+                gap: 70px;
+            }
+        }
+    }
+    .main-trans{
+        .fotos{
+            display: grid;
+            width: 100%;
+            height: 100vh;
+            align-content: center;
+            grid-template-columns: repeat(3,200px);
+            grid-template-rows: repeat(6,4.375rem);
+            grid-template-areas:
+            "foto1 foto1 foto2"
+            "foto1 foto1 foto4"
+            "foto5 foto8 foto8"
+            "foto7 foto8 foto8"
+            "foto3 foto3 foto6"
+            "foto3 foto3 foto6";
+            
+            .foto1{
+                background-color: #FFDA56;
+                grid-area: foto1;
+            }
+            .foto2{
+                background-color: aqua;
+                grid-area: foto2;
+            }
+            .foto3{
+                background-color: blue;
+                grid-area: foto3;
+            }
+            .foto4{
+                background-color: black;
+                grid-area: foto4;
+            }
+            .foto5{
+                background-color: #9c9b99;
+                grid-area: foto5;
+            }
+            .foto6{
+                background-color: beige;
+                grid-area: foto6;
+            }
+            .foto7{
+                background-color: #d42f12;
+                grid-area: foto7;
+            }
+            .foto8{
+                background-color: #099126;
+                grid-area: foto8;
+            }
+        }
+    }
+}
