@@ -552,3 +552,7 @@ footer {
   .main-index .cartas div {
     height: 210px;
     width: 315px; } }
+
+@media (max-width: 1525px) {
+  .main-index .gif {
+    height: 550px; } }
