@@ -48,25 +48,6 @@
             text-align: center;
         }
     }
-    .alimentacion{
-        margin-top: 30px;
-        display: flex;
-        align-items: center;
-        div{
-            background-image: $backg-degrades;
-            box-shadow: 1px 1px .625rem black;
-            h2{
-            font-size: 30px;
-            text-align: center;
-            border-bottom:5px solid black;
-        }
-        p{
-            text-align: center;
-            font-size: 30px;
-        }    
-        }
-
-    }
     section{
         margin-top: 30px;
         display: flex;

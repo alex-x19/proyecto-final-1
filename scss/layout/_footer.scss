@@ -1,21 +1,24 @@
 footer{
     background-color: $backg-color;
     width: 100%;
-    height: 200px;
+    height: 100%;
     section{
-        color: aliceblue;
-        margin-left: 10px;
+        width: 100%;
+        height: 100%;
+        display: block;
+        text-align: center;
         h2{
             text-align: center;
             font-size: map-get($size, tit);
+            color: #141413;
+            background-color: #ffda56b9;
         }
         .icon-footer{
-        text-align:center
+            text-align:center
         }
         .info-footer{
-            display: flex;
-            justify-content: space-around;
-            gap: 150px;
+            color: #FFDA56;
+            margin: 10px;
         }
     }
 }

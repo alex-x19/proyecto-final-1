@@ -1,16 +1,38 @@
 .main-planes{
-    div{
-        background-image: $backg-degrades;
+    .cuenta{
         text-align: center;
+        background-color: #0e0d0d49;
+        border:5px solid #FFDA56;
+        margin-bottom: 30px;
+        h1{
+            color: #FFDA56;
+        }
         h2{
-            border-bottom: 5px solid black;
-            font-size: map-get($size, tit);
+            color: #FFDA56;
         }
         p{
-            font-size: 30px;
+            color: white;
+            font-size: 16px;
+        }
+        .init{
+            cursor: pointer;
+            background-color: #FFDA56;
+            padding: 20px 80px 20px 80px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 8px;
+            
+            &:hover{
+                background-color: #c49b06;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+            }
         }
     }
-    section{
+    .planes{
         @include flex;
         -webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	    animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -59,7 +81,7 @@
                 transform: scale(1.1);
             }
             a:hover{
-                color: white;
+                color: white; 
             }
             h2{
                 border-bottom: 5px solid black;
