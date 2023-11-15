@@ -93,21 +93,40 @@
     }
     /* info */
     .main-info{
+        .formulario{
+            margin-left: 0%;
+            textarea{
+                width: 380px;
+            }
+            .btnform{
+                display: block;
+                background-color: rgba(0, 0, 0, 0.342);
+                width: 400px;
+                padding: 10px;
+                border:2px solid #FFDA56;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                font-size: 16px;
+            }
+        }
         .ubicacion{
             iframe{
                 height: 250px;
                 width: 250px;
             }
         }
-        .foto-perfil{
-            article{
-                width: 100%;
-            }
-        }
     }
     .main-planes{
-        section{
+        .cuenta{
+            .init{
+                a{
+                    margin: 10px;
+                }
+            }
+        }
+        .planes{
             article{
+                width: 100%;
                 h2{
                     font-size: 25px;
                 }

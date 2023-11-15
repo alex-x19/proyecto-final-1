@@ -1,0 +1,51 @@
+@media(max-width:320px){
+    .footer{
+        height: 530px;
+    }
+    .main-index{
+        .gif{
+            height: 200px;
+        }
+    }
+    .main-info{
+        .formulario{
+            margin-left: 5px;
+            textarea{
+                width: 270px;
+            }
+            .btnform{ 
+                width: 290px;
+            }
+        }
+    }
+    .main-trans{
+        .fotos{
+            grid-template-columns: repeat(2,130px);
+            grid-template-rows: repeat(6,70px);
+        }
+    }
+    .main-planes{
+        .planes{
+            article{
+                &:hover{
+                    transform: scale(0.8);
+                }
+            }
+        }
+    }
+    .main-tienda{
+        .cards{
+            .card{
+                height: 270px;
+                width: 130px;
+                font-size: 10px;
+                h2{
+                    font-size: 15px;
+                }
+                .btn{
+                    padding: 1px 30px 1px 30px;
+                }
+            }
+        }
+    }
+}

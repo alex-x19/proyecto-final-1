@@ -2,7 +2,7 @@
     .main-tienda{
         .cards{
             .card{
-                height: 240px;
+                height: 280px;
                 width: 150px;
                 font-size: 10px;
                 h2{
@@ -10,33 +10,46 @@
                 }
                 .btn{
                     padding: 1px 45px 1px 45px;
+                    margin-bottom: 5px;
                 }
             }
         }
     }
     .main-planes{
-        section{
+        .planes{
             article{
-                width: 100%;
-                font-size: 25px;
+                width: 600px;
+                font-size: 20px;
+                &:hover{
+                    transform: scale(0.8);
+                }
+                h2{
+                    font-size: 25px;
+                }
             }
         }
     }
     .main-info{
-        .foto-perfil{
-            article{
-                width: 600px;
-            } 
+        .formulario{
+            margin-left:16%;
+            textarea{
+                width: 500px;
+            }
+            .btnform{
+                display: block;
+            background-color: rgba(0, 0, 0, 0.342);
+            width: 520px;
+            padding: 10px;
+            border:2px solid #FFDA56;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            }
         }
     }
     .main-index{
-        .alimentacion{
-            width: 100%;
-            div{
-                h2{
-                    text-align: center;
-                }
-            }
+        .gif{
+            height: 400px;
         }
     }
     .footer{
@@ -44,7 +57,8 @@
         width: 100%;
         section{
                 .info-footer{
-                gap: 70px;
+                    display: block;
+                /* gap: 70px; */
             }
         }
     }
