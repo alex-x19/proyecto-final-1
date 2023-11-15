@@ -644,18 +644,13 @@ footer {
       font-size: 25px; }
   .main-index .cartas div {
     height: 210px;
-    width: 315px; } }
-
-@media (max-width: 1525px) {
-  .main-index .gif {
-    height: 550px; } }
-    /* width: 315px; } */
+    width: 315px; }
   .main-info .formulario {
     margin-left: 0%; }
     .main-info .formulario textarea, .main-info .formulario input[type="text"], .main-info .formulario [type="gmail"] {
       width: 330px; }
     .main-info .formulario .btnform {
-      width: 350px; } /* } */
+      width: 350px; } }
 
 @media (max-width: 320px) {
   .footer {

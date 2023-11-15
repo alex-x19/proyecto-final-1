@@ -37,7 +37,6 @@
         height: 100%;
         box-shadow: 1px 1px .6 rgb(14, 12, 12);
         border-radius: 16px;
-        margin-right: 5px;
         h2{
             color: #FFDA56;
             text-align: center;
@@ -58,6 +57,7 @@
             width: 230px;
             box-shadow: 2px 2px 5px rgb(83, 83, 83);
             border-radius: 15px;
+            /* padding-left: 3px; */
             text-align: center;
             transition: 1s;
             &:hover{
