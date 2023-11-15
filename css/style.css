@@ -308,7 +308,10 @@ footer {
   align-content: center;
   grid-template-columns: repeat(4, 250px);
   grid-template-rows: repeat(4, 170px);
-  grid-template-areas: "foto1 foto1 foto2 foto3" "foto1 foto1 foto4 foto3" "foto5 foto8 foto6 foto6" "foto7 foto8 foto6 foto6";
+  grid-template-areas: "foto1 foto1 foto2 foto3"
+ "foto1 foto1 foto4 foto3"
+ "foto5 foto8 foto6 foto6"
+ "foto7 foto8 foto6 foto6";
   -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
@@ -522,7 +525,12 @@ footer {
     align-content: center;
     grid-template-columns: repeat(3, 200px);
     grid-template-rows: repeat(6, 4.375rem);
-    grid-template-areas: "foto1 foto1 foto2" "foto1 foto1 foto4" "foto5 foto8 foto8" "foto7 foto8 foto8" "foto3 foto3 foto6" "foto3 foto3 foto6"; }
+    grid-template-areas: "foto1 foto1 foto2"
+ "foto1 foto1 foto4"
+ "foto5 foto8 foto8"
+ "foto7 foto8 foto8"
+ "foto3 foto3 foto6"
+ "foto3 foto3 foto6"; }
     .main-trans .fotos .foto1, .main-trans .fotos .foto2, .main-trans .fotos .foto3, .main-trans .fotos .foto4, .main-trans .fotos .foto5, .main-trans .fotos .foto6, .main-trans .fotos .foto7, .main-trans .fotos .foto8 {
       background-color: #FFDA56;
       grid-area: foto1; }
@@ -599,7 +607,12 @@ footer {
   .main-trans .fotos {
     grid-template-columns: repeat(2, 170px);
     grid-template-rows: repeat(6, 80px);
-    grid-template-areas: "foto1 foto2" "foto1 foto3" "foto4 foto6" "foto5 foto6" "foto7 foto8" "foto7 foto8"; }
+    grid-template-areas: "foto1 foto2"
+ "foto1 foto3"
+ "foto4 foto6"
+ "foto5 foto6"
+ "foto7 foto8"
+ "foto7 foto8"; }
   /* info */
   .main-info .formulario {
     margin-left: 0%; }
@@ -631,20 +644,18 @@ footer {
       font-size: 25px; }
   .main-index .cartas div {
     height: 210px;
-<<<<<<< HEAD
     width: 315px; } }
 
 @media (max-width: 1525px) {
   .main-index .gif {
     height: 550px; } }
-=======
-    width: 315px; }
+    /* width: 315px; } */
   .main-info .formulario {
     margin-left: 0%; }
     .main-info .formulario textarea, .main-info .formulario input[type="text"], .main-info .formulario [type="gmail"] {
       width: 330px; }
     .main-info .formulario .btnform {
-      width: 350px; } }
+      width: 350px; } /* } */
 
 @media (max-width: 320px) {
   .footer {
@@ -670,4 +681,3 @@ footer {
       font-size: 15px; }
     .main-tienda .cards .card .btn {
       padding: 1px 30px 1px 30px; } }
->>>>>>> rama1
