@@ -61,24 +61,23 @@ body {
     transform-origin: 50% 100%;
     opacity: 1; } }
   .main-index .gif {
-    background-color: #f7f5f5;
-    background-image: url("../assets/img/gif-para mi magina.gif");
-    background-size: contain;
-    width: 100%;
-    height: 500px;
-    background-position: center;
-    box-shadow: 1px 1px .625rem black;
-    border-radius: 60px; }
-    .main-index .gif h3 {
-      font-size: 40px;
+    text-align: center; }
+    .main-index .gif img {
+      height: 550px;
+      width: 1000px;
+      border-radius: 50px;
       text-align: center; }
+  .main-index h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #FFDA56; }
   .main-index section {
     margin-top: 30px;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 30px; }
+    gap: 10%; }
     .main-index section .carta1, .main-index section .carta2, .main-index section .carta3, .main-index section .carta4, .main-index section .carta5, .main-index section .carta6 {
       background-color: aliceblue;
       background-image: url("../assets/img/power.jpg");
@@ -90,6 +89,7 @@ body {
       color: aliceblue;
       text-align: center;
       background-size: contain;
+      margin-bottom: 35px;
       transition: 1s; }
       .main-index section .carta1 h2, .main-index section .carta2 h2, .main-index section .carta3 h2, .main-index section .carta4 h2, .main-index section .carta5 h2, .main-index section .carta6 h2 {
         background-color: #202121ad;
@@ -114,12 +114,8 @@ body {
       background-image: url("../assets/img/recuperacion de leciones.jpg"); }
 
 footer {
-  background-color: black;
-  width: 100%;
-  height: 100%; }
+  background-color: black; }
   footer section {
-    width: 100%;
-    height: 100%;
     display: block;
     text-align: center; }
     footer section h2 {
@@ -127,11 +123,13 @@ footer {
       font-size: 30px;
       color: #141413;
       background-color: #ffda56b9; }
-    footer section .icon-footer {
-      text-align: center; }
     footer section .info-footer {
       color: #FFDA56;
       margin: 10px; }
+      footer section .info-footer div {
+        display: flex;
+        justify-content: center;
+        gap: 5px; }
 
 .main-tienda {
   -webkit-animation: scale-in-ver-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -177,16 +175,16 @@ footer {
   .main-tienda .cards {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 20px; }
+    margin-bottom: 20px; }
     .main-tienda .cards .card {
       background-color: white;
       height: 380px;
-      width: 230px;
+      width: 250px;
       box-shadow: 2px 2px 5px #535353;
       border-radius: 15px;
-      /* padding-left: 3px; */
       text-align: center;
-      transition: 1s; }
+      transition: 1s;
+      margin-bottom: 30px; }
       .main-tienda .cards .card:hover {
         transform: scale(1.1); }
       .main-tienda .cards .card div {
@@ -203,7 +201,8 @@ footer {
         padding: 1px 80px 1px 80px;
         border-radius: 10px;
         text-align: center;
-        margin-bottom: 8px; }
+        margin-bottom: 8px;
+        width: 100%; }
         .main-tienda .cards .card .btn:hover {
           background-color: #c49b06; }
         .main-tienda .cards .card .btn a {
@@ -308,10 +307,7 @@ footer {
   align-content: center;
   grid-template-columns: repeat(4, 250px);
   grid-template-rows: repeat(4, 170px);
-  grid-template-areas: "foto1 foto1 foto2 foto3"
- "foto1 foto1 foto4 foto3"
- "foto5 foto8 foto6 foto6"
- "foto7 foto8 foto6 foto6";
+  grid-template-areas: "foto1 foto1 foto2 foto3" "foto1 foto1 foto4 foto3" "foto5 foto8 foto6 foto6" "foto7 foto8 foto6 foto6";
   -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
@@ -434,53 +430,97 @@ footer {
     text-align: center;
     font-size: 30px;
     color: #FFDA56; }
+    .main-info .ubicacion iframe {
+      width: 40%;
+      height: 300px; }
   .main-info h1 {
     color: #FFDA56;
     text-align: center; }
   .main-info .formulario {
-    margin-left: 19%;
-    margin-bottom: 30px; }
-    .main-info .formulario label {
-      display: block;
-      font-weight: bold;
-      border-bottom: 5px;
-      color: #FFDA56;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%; }
+    .main-info .formulario .form {
+      margin-left: 30%;
+      margin-right: 25%;
       width: 100%; }
-    .main-info .formulario textarea, .main-info .formulario input[type="text"], .main-info .formulario [type="gmail"] {
-      display: block;
-      background-color: rgba(0, 0, 0, 0.342);
-      width: 800px;
-      padding: 10px;
-      border: 2px solid #FFDA56;
-      border-radius: 5px;
-      margin-bottom: 10px;
-      font-size: 16px; }
-    .main-info .formulario [type="gmail"] {
+      .main-info .formulario .form label {
+        display: block;
+        font-weight: bold;
+        border-bottom: 5px;
+        color: #FFDA56;
+        width: 100%; }
+      .main-info .formulario .form textarea, .main-info .formulario .form input[type="text"], .main-info .formulario .form [type="gmail"] {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.342);
+        width: 80%;
+        padding: 10px;
+        border: 2px solid #FFDA56;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 16px; }
+      .main-info .formulario .form [type="gmail"] {
+        color: #FFDA56; }
+      .main-info .formulario .form [type="text"] {
+        color: #FFDA56; }
+      .main-info .formulario .form [name="mensaje"] {
+        color: #FFDA56; }
+      .main-info .formulario .form .btnform {
+        color: #FFDA56;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.342);
+        border: none; }
+
+.error {
+  display: flex; }
+  .error div img {
+    width: 100%;
+    height: 100%; }
+  .error .e404 {
+    background-color: #ffda5600;
+    width: 50%;
+    height: 800px;
+    margin-left: 20%; }
+    .error .e404 h1 {
+      font-size: 100px;
       color: #FFDA56; }
-    .main-info .formulario [type="text"] {
-      color: #FFDA56; }
-    .main-info .formulario [name="mensaje"] {
-      color: #FFDA56; }
-    .main-info .formulario .btnform {
+    .error .e404 p {
+      display: flex;
+      justify-content: space-between;
+      font-size: 30px;
+      color: white; }
+    .error .e404 .inicio {
+      font-size: 40px;
       color: #FFDA56;
-      cursor: pointer;
-      background-color: rgba(0, 0, 0, 0.342);
-      border: none; }
+      text-decoration: none;
+      display: flex;
+      justify-content: center; }
+      .error .e404 .inicio:hover {
+        transform: scale(1.5); }
 
 @media (max-width: 1024px) {
   .main-trans .fotos {
     grid-template-columns: repeat(4, 200px);
     grid-template-rows: repeat(4, 120px); }
-  .main-index .gif {
-    height: 400px; }
-  .main-info .formulario {
-    margin-left: 100px; }
-  footer {
-    height: 230px; }
+  .main-index .gif img {
+    height: 400px;
+    width: 800px; }
+  footer section .info-footer {
+    display: block; }
   .main-planes .planes article {
-    width: 700px; } }
+    width: 700px; }
+  .main-tienda .cards .card {
+    height: 380px;
+    width: 190px; } }
 
 @media (max-width: 768px) {
+  .main-tienda .cards .card:nth-child(4) {
+    display: none; }
+  .main-tienda .cards .card:nth-child(9) {
+    display: none; }
+  .main-tienda .cards .card:nth-child(15) {
+    display: none; }
   .main-tienda .cards .card {
     height: 280px;
     width: 150px;
@@ -497,27 +537,31 @@ footer {
       transform: scale(0.8); }
     .main-planes .planes article h2 {
       font-size: 25px; }
-  .main-info .formulario {
-    margin-left: 16%; }
-    .main-info .formulario textarea, .main-info .formulario input[type="text"], .main-info .formulario [type="gmail"] {
-      width: 500px; }
-    .main-info .formulario .btnform {
-      display: block;
-      background-color: rgba(0, 0, 0, 0.342);
-      width: 520px;
-      padding: 10px;
-      border: 2px solid #FFDA56;
-      border-radius: 5px;
-      margin-bottom: 10px;
-      font-size: 16px; }
-  .main-index .gif {
-    height: 400px; }
-  .footer {
-    height: 240px;
-    width: 100%; }
-    .footer section .info-footer {
-      display: block;
-      /* gap: 70px; */ }
+  .main-index .gif img {
+    width: 100%;
+    height: 100%; }
+  .error {
+    display: block;
+    flex-direction: column; }
+    .error div {
+      display: none; }
+      .error div img {
+        display: none; }
+  .main-info .formulario .form {
+    margin-left: 5%;
+    margin-right: 5%; }
+  .main-info .formulario .btnform {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.342);
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #FFDA56;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px; }
+  .main-info .ubicacion iframe {
+    height: 280px;
+    width: 280px; }
   .main-trans .fotos {
     display: grid;
     width: 100%;
@@ -525,12 +569,7 @@ footer {
     align-content: center;
     grid-template-columns: repeat(3, 200px);
     grid-template-rows: repeat(6, 4.375rem);
-    grid-template-areas: "foto1 foto1 foto2"
- "foto1 foto1 foto4"
- "foto5 foto8 foto8"
- "foto7 foto8 foto8"
- "foto3 foto3 foto6"
- "foto3 foto3 foto6"; }
+    grid-template-areas: "foto1 foto1 foto2" "foto1 foto1 foto4" "foto5 foto8 foto8" "foto7 foto8 foto8" "foto3 foto3 foto6" "foto3 foto3 foto6"; }
     .main-trans .fotos .foto1, .main-trans .fotos .foto2, .main-trans .fotos .foto3, .main-trans .fotos .foto4, .main-trans .fotos .foto5, .main-trans .fotos .foto6, .main-trans .fotos .foto7, .main-trans .fotos .foto8 {
       background-color: #FFDA56;
       grid-area: foto1; }
@@ -556,8 +595,76 @@ footer {
       background-color: #099126;
       grid-area: foto8; } }
 
-@media (max-width: 425px) {
-  /* index nav */
+@media (max-width: 510px) {
+  .main-index .gif {
+    height: 280px; }
+    .main-index .gif h3 {
+      font-size: 35px; }
+  .main-index .cartas div {
+    height: 220px;
+    width: 335px; }
+    .main-index .cartas div p {
+      font-size: 20px; }
+  .main-tienda .cards .card:nth-child(1) {
+    display: none; }
+  .main-tienda .cards .card:nth-child(4) {
+    display: none; }
+  .main-tienda .cards .card:nth-child(6) {
+    display: none; }
+  .main-tienda .cards .card:nth-child(9) {
+    display: none; }
+  .main-tienda .cards .card:nth-child(12) {
+    display: none; }
+  .main-tienda .cards .card:nth-child(15) {
+    display: none; }
+  .main-trans .fotos {
+    grid-template-columns: repeat(2, 140px);
+    grid-template-rows: repeat(6, 80px);
+    grid-template-areas: "foto1 foto2" "foto1 foto3" "foto4 foto6" "foto5 foto6" "foto7 foto8" "foto7 foto8"; }
+  .main-info .ubicacion iframe {
+    height: 250px;
+    width: 250px; }
+  .main-planes .cuenta .init a {
+    margin: 10px; }
+  .main-planes .planes article {
+    width: 100%; }
+    .main-planes .planes article h2 {
+      font-size: 25px; }
+  .error .e404 {
+    width: 100%; }
+    .error .e404 h1 {
+      font-size: 50px; }
+    .error .e404 .inicio {
+      text-align: center; } }
+
+@media (max-width: 375px) {
+  .main-index .gif {
+    height: 250px; }
+    .main-index .gif h3 {
+      font-size: 25px; }
+  .main-index .cartas div {
+    height: 210px;
+    width: 315px; } }
+
+@media (max-width: 320px) {
+  .main-index .gif {
+    height: 200px; }
+  .main-trans .fotos {
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: repeat(6, 80px);
+    grid-template-areas: "foto1 foto2" "foto1 foto3" "foto4 foto6" "foto5 foto6" "foto7 foto8" "foto7 foto8"; }
+  .main-planes .planes article:hover {
+    transform: scale(0.8); }
+  .main-tienda .cards .card {
+    height: 270px;
+    width: 130px;
+    font-size: 10px; }
+    .main-tienda .cards .card h2 {
+      font-size: 15px; }
+    .main-tienda .cards .card .btn {
+      padding: 1px 30px 1px 30px; } }
+
+@media (max-width: 610px) {
   .nav-wrapper nav #toggle:checked ~ div {
     height: 100%; }
   .nav-wrapper nav label {
@@ -571,108 +678,9 @@ footer {
       flex-direction: column;
       align-items: center;
       padding: 0.5rem 0px; }
-  /* index */
-  .main-index .gif {
-    height: 280px; }
-    .main-index .gif h3 {
-      font-size: 35px; }
-  .main-index .cartas div {
-    height: 220px;
-    width: 335px; }
-    .main-index .cartas div p {
-      font-size: 20px; }
-  /* footer */
-  .footer {
-    height: 450px;
-    gap: 0; }
-    .footer section .info-footer {
-      display: flex;
-      flex-direction: column;
-      font-size: 20px;
-      gap: 0px; }
-  /* tienda  */
-  .main-tienda .cards .card:nth-child(1) {
-    display: none; }
-  .main-tienda .cards .card:nth-child(4) {
-    display: none; }
-  .main-tienda .cards .card:nth-child(6) {
-    display: none; }
-  .main-tienda .cards .card:nth-child(9) {
-    display: none; }
-  .main-tienda .cards .card:nth-child(12) {
-    display: none; }
-  .main-tienda .cards .card:nth-child(15) {
-    display: none; }
-  /* tranformaciones */
-  .main-trans .fotos {
-    grid-template-columns: repeat(2, 170px);
-    grid-template-rows: repeat(6, 80px);
-    grid-template-areas: "foto1 foto2"
- "foto1 foto3"
- "foto4 foto6"
- "foto5 foto6"
- "foto7 foto8"
- "foto7 foto8"; }
-  /* info */
-  .main-info .formulario {
-    margin-left: 0%; }
-    .main-info .formulario textarea, .main-info .formulario input[type="text"], .main-info .formulario [type="gmail"] {
-      width: 380px; }
-    .main-info .formulario .btnform {
-      display: block;
-      background-color: rgba(0, 0, 0, 0.342);
-      width: 400px;
-      padding: 10px;
-      border: 2px solid #FFDA56;
-      border-radius: 5px;
-      margin-bottom: 10px;
-      font-size: 16px; }
-  .main-info .ubicacion iframe {
-    height: 250px;
-    width: 250px; }
-  .main-planes .cuenta .init a {
-    margin: 10px; }
   .main-planes .planes article {
     width: 100%; }
-    .main-planes .planes article h2 {
-      font-size: 25px; } }
-
-@media (max-width: 375px) {
-  .main-index .gif {
-    height: 250px; }
-    .main-index .gif h3 {
-      font-size: 25px; }
-  .main-index .cartas div {
-    height: 210px;
-    width: 315px; }
-  .main-info .formulario {
-    margin-left: 0%; }
-    .main-info .formulario textarea, .main-info .formulario input[type="text"], .main-info .formulario [type="gmail"] {
-      width: 330px; }
-    .main-info .formulario .btnform {
-      width: 350px; } }
-
-@media (max-width: 320px) {
-  .footer {
-    height: 530px; }
-  .main-index .gif {
-    height: 200px; }
-  .main-info .formulario {
-    margin-left: 5px; }
-    .main-info .formulario textarea, .main-info .formulario input[type="text"], .main-info .formulario [type="gmail"] {
-      width: 270px; }
-    .main-info .formulario .btnform {
-      width: 290px; }
   .main-trans .fotos {
-    grid-template-columns: repeat(2, 130px);
-    grid-template-rows: repeat(6, 70px); }
-  .main-planes .planes article:hover {
-    transform: scale(0.8); }
-  .main-tienda .cards .card {
-    height: 270px;
-    width: 130px;
-    font-size: 10px; }
-    .main-tienda .cards .card h2 {
-      font-size: 15px; }
-    .main-tienda .cards .card .btn {
-      padding: 1px 30px 1px 30px; } }
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(6, 100px);
+    grid-template-areas: "foto1 foto2" "foto1 foto3" "foto4 foto6" "foto5 foto6" "foto7 foto8" "foto7 foto8"; } }

@@ -50,16 +50,16 @@
     .cards{
         display: flex;
         justify-content: space-around;
-        padding-bottom: 20px;
+        margin-bottom: 20px;
         .card{
             background-color: white;
             height: 380px;
-            width: 230px;
+            width: 250px;
             box-shadow: 2px 2px 5px rgb(83, 83, 83);
             border-radius: 15px;
-            /* padding-left: 3px; */
             text-align: center;
             transition: 1s;
+            margin-bottom: 30px;
             &:hover{
                 transform: scale(1.1); 
             }
@@ -80,6 +80,7 @@
                 border-radius: 10px;
                 text-align: center;
                 margin-bottom: 8px;
+                width: 100%;
                 
                 &:hover{
                     background-color: #c49b06;

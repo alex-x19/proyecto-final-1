@@ -6,22 +6,32 @@
         }
     }
     .main-index{
-    .gif{
-        height: 400px;
-    }
-    }
-    .main-info{
-        .formulario{
-            margin-left: 100px;
+        .gif{
+            img{
+                height: 400px;
+                width: 800px;
+            }
         }
     }
     footer{
-        height: 230px;
+        section{
+            .info-footer{
+                display: block;
+            }
+        }
     }
     .main-planes{
         .planes{
             article{
                 width: 700px;
+            }
+        }
+    }
+    .main-tienda{
+        .cards{
+            .card{
+                height: 380px;
+                width: 190px;
             }
         }
     }

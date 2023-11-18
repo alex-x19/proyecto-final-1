@@ -1,0 +1,35 @@
+.error{
+    display: flex;
+    div{
+        img{
+            width: 100%;
+            height: 100%
+        }
+    }
+    .e404{
+        background-color: #ffda5600;
+        width: 50%;
+        height: 800px;
+        margin-left: 20%;
+        h1{
+            font-size: 100px;
+            color: #FFDA56;
+        }
+        p{
+            display: flex;
+            justify-content: space-between;
+            font-size: 30px;
+            color: white;
+        }
+        .inicio{
+            font-size: 40px;
+            color: #FFDA56;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            &:hover{
+                transform: scale(1.5);
+            }
+        }
+    }
+}
